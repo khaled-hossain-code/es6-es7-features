@@ -19,5 +19,13 @@ async function combo() {
 
 combo();
 
+async function parallel() {
+    let [valueOfOne,valueOfTwo] = await Promise.all([one(),two()]);
+    console.log(`Parallel: ${valueOfOne}, ${valueOfTwo}`);
+}
+
+parallel();
+
+
 
 
