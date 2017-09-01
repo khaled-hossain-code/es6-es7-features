@@ -1,5 +1,9 @@
 import Car from './classes/Car';
 import Drone from './classes/Drone';
+import fleet from './data/fleet-data';
+import FleetDataService from './services/Fleet-data-service'
 
-Drone.getCompanyName(); // Toshiba , Droid Drone
-Car.getCompanyName(); //Toshiba
+
+let dataService = new FleetDataService();
+
+dataService.loadData(fleet);

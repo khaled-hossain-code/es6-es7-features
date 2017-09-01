@@ -1,10 +1,12 @@
 import Vehicle from './Vehicle'
 
 class Car extends Vehicle {
-    constructor(licNum){
-        super(licNum);
-        this.gpsEnabled = false; //here we are overriding a property of base class
+    constructor(license, model, latLong){
+        super(license, model, latLong);
+        this.make = null;
+        this.miles = null;
     }
+    
 }
 
 export default Car;

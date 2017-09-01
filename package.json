@@ -24,5 +24,8 @@
     "babel-preset-es2016": "^6.24.1",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "material-design-lite": "^1.3.0"
   }
 }
